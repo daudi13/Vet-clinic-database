@@ -36,3 +36,14 @@ INSERT INTO
     neutered, weight_kg
     )
 VALUES('Devimon', 'May 12, 2017', 5, TRUE, 11);
+
+
+/*insert data for Charmander*/
+
+INSERT INTO
+  animals(
+    name, 
+    date_of_birth, 
+    escape_attempts, 
+    neutered, weight_kg
+    ) VALUES('Charmander', 'February 8, 2020', 0, FALSE, -11);
