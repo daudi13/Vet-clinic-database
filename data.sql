@@ -28,4 +28,11 @@ INSERT INTO
     )
 VALUES('Pikachu', 'January 7, 2021', 1, FALSE, 15.04);
 
-INSERT INTO animals (name) VALUES ('Charlie');
+INSERT INTO 
+  animals(
+    name, 
+    date_of_birth, 
+    escape_attempts, 
+    neutered, weight_kg
+    )
+VALUES('Devimon', 'May 12, 2017', 5, TRUE, 11);
