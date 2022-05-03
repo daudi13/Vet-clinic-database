@@ -77,3 +77,14 @@ INSERT INTO
     escape_attempts, 
     neutered, weight_kg
     ) VALUES('Angemon', 'June 12, 2005', 1, TRUE, -45);
+
+
+/*Insert data for Boarmon*/
+
+INSERT INTO
+  animals(
+    name, 
+    date_of_birth, 
+    escape_attempts, 
+    neutered, weight_kg
+    ) VALUES('Boarmon', 'June 7, 2005', 7, TRUE, 20.4);
