@@ -1,5 +1,5 @@
 # Vet Clinic Database
-> This is a database projec for a clinic that uses SQL. the database holds data about 
+> This is a database projec for a vet clinic that uses SQL. the database holds data about 
 
 - animals
 - animals' owners
