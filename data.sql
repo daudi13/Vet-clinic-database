@@ -47,3 +47,13 @@ INSERT INTO
     escape_attempts, 
     neutered, weight_kg
     ) VALUES('Charmander', 'February 8, 2020', 0, FALSE, -11);
+
+/*Insert data  Plantmon*/
+
+INSERT INTO
+  animals(
+    name, 
+    date_of_birth, 
+    escape_attempts, 
+    neutered, weight_kg
+    ) VALUES('Plantmon', 'November 15, 2021', 2, TRUE, -5.7);
