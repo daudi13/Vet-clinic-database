@@ -33,5 +33,9 @@ SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
 /*How many animals are there*/
 
-SELECT COUNT(name) FROM animals;
+SELECT COUNT(*) FROM animals;
+
+/*How many animals have never tried to escape?*/
+
+SELECT COUNT(*) FROM animals WHERE escape_attempts = 0
 
