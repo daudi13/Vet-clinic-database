@@ -31,6 +31,13 @@ SELECT * FROM animals WHERE name != 'Gabumon';
 
 SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
+/*update animals table  by setting the species to unspecified*/
+
+BEGIN;
+UPDATE animals
+SET species = 'unspecified';
+ROLLBACK;
+
 /*How many animals are there*/
 
 SELECT COUNT(*) FROM animals;
