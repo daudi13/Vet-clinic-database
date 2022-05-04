@@ -38,6 +38,13 @@ UPDATE animals
 SET species = 'unspecified';
 ROLLBACK;
 
+/*Update the animals table by setting the species column to pokemon for all animals that don't have species already set.*/
+
+UPDATE animals
+SET species = 'pokemon'
+WHERE species IS NULL;
+COMMIT;
+
 /*How many animals are there*/
 
 SELECT COUNT(*) FROM animals;
