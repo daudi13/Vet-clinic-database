@@ -52,6 +52,11 @@ DELETE from animals;
 ROLLBACK;
 SELECT * FROM animals;
 
+/*Delete animals born after Jan 1st, 2022*/
+
+DELETE FROM animals 
+WHERE date_of_birth > 'January 1, 2022';
+
 /*How many animals are there*/
 
 SELECT COUNT(*) FROM animals;
