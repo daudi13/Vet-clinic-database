@@ -45,6 +45,13 @@ SET species = 'pokemon'
 WHERE species IS NULL;
 COMMIT;
 
+/*delete all records in the animals table, then roll back the transaction*/
+
+BEGIN;
+DELETE from animals;
+ROLLBACK;
+SELECT * FROM animals;
+
 /*How many animals are there*/
 
 SELECT COUNT(*) FROM animals;
