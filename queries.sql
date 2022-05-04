@@ -61,6 +61,17 @@ WHERE date_of_birth > 'January 1, 2022';
 
 SAVEPOINT SP1;
 
+/*Update all animals' weight to be their weight multiplied by -1.
+Rollback to the savepoint, Update all animals' weights that are negative to be their weight multiplied by -1. commit */
+
+UPDATE animals
+SET weight_kg = weight_kg * -1;
+ROLLBACK TO SP1;
+UPDATE animals
+SET weight_kg = weight_kg * -1
+WHERE weight_kg < 0;
+COMMIT;
+
 /*How many animals are there*/
 
 SELECT COUNT(*) FROM animals;
