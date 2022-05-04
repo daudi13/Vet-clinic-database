@@ -57,6 +57,10 @@ SELECT * FROM animals;
 DELETE FROM animals 
 WHERE date_of_birth > 'January 1, 2022';
 
+/*Create SAVEPOINT*/
+
+SAVEPOINT SP1;
+
 /*How many animals are there*/
 
 SELECT COUNT(*) FROM animals;
