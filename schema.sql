@@ -8,3 +8,8 @@ CREATE TABLE animals(
   neutered BOOLEAN,
   weight_kg REAL
   );
+
+/*Add a column species of type string to the animal table*/
+
+ALTER TABLE animals
+ADD COLUMN species VARCHAR(100);
