@@ -50,3 +50,7 @@ SELECT neutered, COUNT(escape_attempts) FROM animals GROUP BY neutered ORDER BY 
 /*what is the minimum and maximum weight of each type of animals*/
 
 SELECT species, MAX(weight_kg), MIN(weight_kg) FROM animals GROUP BY species;
+
+/*What is the average number of escape attempts per animal type of those born between 1990 and 2000?*/
+
+SELECT species, AVG(escape_attempts) FROM animals WHERE date_of_birth BETWEEN 'January 1, 1990' AND 'December 31, 2000' GROUP BY species;
