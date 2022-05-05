@@ -162,14 +162,14 @@ UPDATE
 
 UPDATE 
   animals 
-  SET owner_id = 1 
+  SET owner_id = 2 
   WHERE name IN('Gabumon', 'Pikachu');
 
 -- Bob owns Devimon and Plantmon
 
 UPDATE 
   animals 
-  SET owner_id = 1 
+  SET owner_id = 3 
   WHERE name IN('Devimon', 'Plantmon');
 
 -- Melody Pond owns Charmander, Squirtle, and Blossom
