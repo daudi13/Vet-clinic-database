@@ -137,3 +137,10 @@ INSERT INTO
     VALUES
     ('Pokemon'), 
     ('Digimon');
+
+-- Modify your Inserted data into the species table
+-- If the name ends in "mon" it will be Digimon
+
+UPDATE
+  animals SET species_id = 2  
+  WHERE name LIKE '%mon';
