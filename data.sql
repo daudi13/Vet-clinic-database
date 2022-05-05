@@ -128,3 +128,12 @@ INSERT INTO
     ('Melody pond', 77), 
     ('Dean Winchester', 14), 
     ('Jodie Whittaker', 38);
+
+-- insert data in the species table
+
+INSERT INTO 
+  species
+    (name) 
+    VALUES
+    ('Pokemon'), 
+    ('Digimon');
