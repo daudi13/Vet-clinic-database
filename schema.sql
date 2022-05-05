@@ -13,3 +13,41 @@ CREATE TABLE animals(
 
 ALTER TABLE animals
 ADD COLUMN species VARCHAR(100);
+
+-- Create a table named owners with the following columns
+
+CREATE TABLE owners(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  full_name VARCHAR(255),
+  age INT,
+  PRIMARY KEY(id)
+  );
+
+  -- Create a table named species with the following columns
+
+  CREATE TABLE species(
+    id INT GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(255),
+    PRIMARY KEY(id)
+    );
+
+  --Remove column species;
+
+  ALTER TABLE animals 
+  DROP COLUMN species;
+
+  --Add columm species_id which is a foreign key referencing species table;
+
+  ALTER TABLE animals 
+  ADD COLUMN species_id INT, 
+  ADD FOREIGN KEY (species_id)
+  REFERENCES species(id)
+  ON DELETE CASCADE;
+
+  -- Add colum owner_id which is a foreign key refencing owner table;
+
+  ALTER TABLE animals 
+  ADD COLUMN owner_id INT, 
+  ADD FOREIGN KEY (owner_id) 
+  REFERENCES owners (id) 
+  ON DELETE CASCADE;

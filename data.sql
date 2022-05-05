@@ -108,3 +108,80 @@ INSERT INTO
     escape_attempts, 
     neutered, weight_kg
     ) VALUES('Ditto', 'May 14, 2022', 4, TRUE, 22);
+
+-- insert data for sam smith;
+
+INSERT INTO 
+owners(
+  full_name,
+  age
+  ) VALUES('Sam Smith', 34);
+
+--insert data for the rest of the owners
+
+INSERT INTO 
+  owners
+    (full_name, age) 
+    VALUES
+    ('Jennifer Ornwell', 19), 
+    ('Bob', 45), 
+    ('Melody pond', 77), 
+    ('Dean Winchester', 14), 
+    ('Jodie Whittaker', 38);
+
+-- insert data in the species table
+
+INSERT INTO 
+  species
+    (name) 
+    VALUES
+    ('Pokemon'), 
+    ('Digimon');
+
+-- Modify your Inserted data into the species table
+-- If the name ends in "mon" it will be Digimon
+
+UPDATE
+  animals SET species_id = 2  
+  WHERE name LIKE '%mon';
+
+-- All other animals are Pokemon
+
+UPDATE 
+  animals SET species_id = 1  
+  WHERE name NOT LIKE '%mon';
+
+-- Modify your inserted animals to include owner information (owner_id);
+
+UPDATE 
+  animals 
+  SET owner_id = 1 
+  WHERE name = 'Agumon';
+
+-- Jennifer Orwell owns Gabumon and Pikachu.
+
+UPDATE 
+  animals 
+  SET owner_id = 2 
+  WHERE name IN('Gabumon', 'Pikachu');
+
+-- Bob owns Devimon and Plantmon
+
+UPDATE 
+  animals 
+  SET owner_id = 3 
+  WHERE name IN('Devimon', 'Plantmon');
+
+-- Melody Pond owns Charmander, Squirtle, and Blossom
+
+UPDATE 
+  animals 
+  SET owner_id = 4 
+  WHERE name IN('Charmander', 'Squirtle', 'Blossom');
+
+-- Dean Winchester owna Angermon and Boarmon
+
+UPDATE 
+  animals 
+  SET owner_id = 5 
+  WHERE name IN('Angemon', 'Boarmon');
