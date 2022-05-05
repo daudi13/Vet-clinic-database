@@ -35,3 +35,11 @@ CREATE TABLE owners(
 
   ALTER TABLE animals 
   DROP COLUMN species;
+
+  --Add columm species_id which is a foreign key referencing species table;
+
+  ALTER TABLE Animals 
+  ADD COLUMN species_id INT, 
+  ADD FOREIGN KEY (species_id)
+  REFERENCES species(id)
+  ON DELETE CASCADE;
