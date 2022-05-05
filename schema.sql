@@ -19,12 +19,14 @@ ADD COLUMN species VARCHAR(100);
 CREATE TABLE owners(
   id INT GENERATED ALWAYS AS IDENTITY,
   full_name VARCHAR(255),
-  age INT
+  age INT,
+  PRIMARY KEY(id)
   );
 
   -- Create a table named species with the following columns
 
   CREATE TABLE species(
     id INT GENERATED ALWAYS AS IDENTITY,
-    name VARCHAR(255)
+    name VARCHAR(255),
+    PRIMARY KEY(id)
     );
