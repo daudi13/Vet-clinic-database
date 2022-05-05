@@ -163,4 +163,11 @@ UPDATE
 UPDATE 
   animals 
   SET owner_id = 1 
-  WHERE name IN('Devimon', 'Pikachu');
+  WHERE name IN('Gabumon', 'Pikachu');
+
+-- Bob owns Devimon and Plantmon
+
+UPDATE 
+  animals 
+  SET owner_id = 1 
+  WHERE name IN('Devimon', 'Plantmon');
