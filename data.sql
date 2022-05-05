@@ -116,3 +116,15 @@ owners(
   full_name,
   age
   ) VALUES('Sam Smith', 34);
+
+--insert data for the rest of the owners
+
+INSERT INTO 
+  owners
+    (full_name, age) 
+    VALUES
+    ('Jennifer Ornwell', 19), 
+    ('Bob', 45), 
+    ('Melody pond', 77), 
+    ('Dean Winchester', 14), 
+    ('Jodie Whittaker', 38);
