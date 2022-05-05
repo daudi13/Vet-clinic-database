@@ -112,3 +112,11 @@ SELECT
   JOIN animals ON 
   species.id = animals.species_id 
   WHERE species.name = 'Pokemon';
+
+-- List of all owners and their animaks, remember to include those that don't own animals
+
+SELECT 
+owners.full_name, animals.name 
+FROM owners 
+LEFT JOIN animals on owners.id = animals.owner_id;
+
