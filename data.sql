@@ -171,3 +171,10 @@ UPDATE
   animals 
   SET owner_id = 1 
   WHERE name IN('Devimon', 'Plantmon');
+
+-- Melody Pond owns Charmander, Squirtle, and Blossom
+
+UPDATE 
+  animals 
+  SET owner_id = 4 
+  WHERE name IN('Charmander', 'Squirtle', 'Blossom');
