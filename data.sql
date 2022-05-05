@@ -150,3 +150,10 @@ UPDATE
 UPDATE 
   animals SET species_id = 1  
   WHERE name NOT LIKE '%mon';
+
+-- Modify your inserted animals to include owner information (owner_id);
+
+UPDATE 
+animals 
+SET owner_id = 1 
+WHERE name = 'Agumon';
