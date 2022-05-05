@@ -108,3 +108,11 @@ INSERT INTO
     escape_attempts, 
     neutered, weight_kg
     ) VALUES('Ditto', 'May 14, 2022', 4, TRUE, 22);
+
+-- insert data for sam smith;
+
+INSERT INTO 
+owners(
+  full_name,
+  age
+  ) VALUES('Sam Smith', 34);
