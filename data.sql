@@ -154,6 +154,13 @@ UPDATE
 -- Modify your inserted animals to include owner information (owner_id);
 
 UPDATE 
-animals 
-SET owner_id = 1 
-WHERE name = 'Agumon';
+  animals 
+  SET owner_id = 1 
+  WHERE name = 'Agumon';
+
+-- Jennifer Orwell owns Gabumon and Pikachu.
+
+UPDATE 
+  animals 
+  SET owner_id = 1 
+  WHERE name IN('Devimon', 'Pikachu');
