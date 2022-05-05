@@ -13,3 +13,11 @@ CREATE TABLE animals(
 
 ALTER TABLE animals
 ADD COLUMN species VARCHAR(100);
+
+-- Create a table named owners with the following columns
+
+CREATE TABLE owners(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  full_name VARCHAR(255),
+  age INT
+  );
