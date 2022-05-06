@@ -199,3 +199,14 @@ INSERT INTO vets(
   ('Maisy Smith', 26, 'January 17, 2019'), 
   ('Stephanie Mendez', 64, 'May 4, 1981'), 
   ('Jack Harkness', 38, 'June 8, 2008');
+
+  --insert data for specialization
+
+  INSERT INTO specialization(
+    vets_id, species_id
+    ) 
+    VALUES
+    (1, 1), 
+    (3, 2), 
+    (3, 1), 
+    (4, 2);
