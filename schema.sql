@@ -90,3 +90,10 @@ CREATE TABLE visits(
   vet_id INT, 
   date_of_vist DATE
   );
+
+-- Add animal_id foreign refering animals table
+
+ALTER TABLE visits 
+ADD FOREIGN KEY (animal_id) 
+REFERENCES animals (id) 
+ON DELETE CASCADE;
