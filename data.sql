@@ -185,3 +185,17 @@ UPDATE
   animals 
   SET owner_id = 5 
   WHERE name IN('Angemon', 'Boarmon');
+
+
+--insert data for vets 
+
+INSERT INTO vets(
+  name, 
+  age, 
+  date_of_graduation
+  )
+  VALUES
+  ('William Tatcher', 45, 'April 23, 2000'), 
+  ('Maisy Smith', 26, 'January 17, 2019'), 
+  ('Stephanie Mendez', 64, 'May 4, 1981'), 
+  ('Jack Harkness', 38, 'June 8, 2008');
