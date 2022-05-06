@@ -58,7 +58,8 @@ CREATE TABLE vets(
   id INT GENERATED ALWAYS AS IDENTITY, 
   name VARCHAR(255), 
   age INT, 
-  date_of_graduation DATE
+  date_of_graduation DATE,
+  PRIMARY KEY(id)
   );
 
 -- create specialization table joining table
@@ -66,3 +67,10 @@ CREATE TABLE vets(
 CREATE TABLE specialization(
   vets_id INT, 
   species_id INT);
+
+-- Add vets_id foreign key refrencing vets table
+
+ALTER TABLE specialization
+ADD FOREIGN KEY (vets_id) 
+REFERENCES vets (id) 
+ON DELETE CASCADE;
