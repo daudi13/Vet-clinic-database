@@ -51,3 +51,12 @@ CREATE TABLE owners(
   ADD FOREIGN KEY (owner_id) 
   REFERENCES owners (id) 
   ON DELETE CASCADE;
+
+-- Create table named vets 
+
+CREATE TABLE vets(
+  id INT GENERATED ALWAYS AS IDENTITY, 
+  name VARCHAR(255), 
+  age INT, 
+  date_of_graduation DATE
+  );
