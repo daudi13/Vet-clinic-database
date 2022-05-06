@@ -6,7 +6,8 @@ CREATE TABLE animals(
   date_of_birth DATE, 
   escape_attempts INT, 
   neutered BOOLEAN,
-  weight_kg REAL
+  weight_kg REAL,
+  PRIMARY KEY(id)
   );
 
 /*Add a column species of type string to the animal table*/
@@ -81,3 +82,11 @@ ALTER TABLE specialization
 ADD FOREIGN KEY (species_id) 
 REFERENCES species (id) 
 ON DELETE CASCADE;
+
+--create a visit table joining vets and animals
+
+CREATE TABLE visits(
+  animal_id INT, 
+  vet_id INT, 
+  date_of_vist DATE
+  );
