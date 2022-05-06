@@ -86,6 +86,7 @@ ON DELETE CASCADE;
 --create a visit table joining vets and animals
 
 CREATE TABLE visits(
+  id INT GENERATED ALWAYS AS IDENTITY,
   animal_id INT, 
   vet_id INT, 
   date_of_vist DATE
@@ -103,4 +104,4 @@ ON DELETE CASCADE;
 ALTER TABLE visits 
 ADD FOREIGN KEY (vet_id) 
 REFERENCES vets (id) 
-ON DELETE CASCADE;V
+ON DELETE CASCADE;
