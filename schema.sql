@@ -74,3 +74,10 @@ ALTER TABLE specialization
 ADD FOREIGN KEY (vets_id) 
 REFERENCES vets (id) 
 ON DELETE CASCADE;
+
+-- Add species_id foreign key refrencing species table
+
+ALTER TABLE specialization 
+ADD FOREIGN KEY (species_id) 
+REFERENCES species (id) 
+ON DELETE CASCADE;
