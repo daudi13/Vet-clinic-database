@@ -97,3 +97,10 @@ ALTER TABLE visits
 ADD FOREIGN KEY (animal_id) 
 REFERENCES animals (id) 
 ON DELETE CASCADE;
+
+--Add vet_id foreign key referencing vet table
+
+ALTER TABLE visits 
+ADD FOREIGN KEY (vet_id) 
+REFERENCES vets (id) 
+ON DELETE CASCADE;
